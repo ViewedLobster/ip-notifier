@@ -9,7 +9,7 @@ def notifier():
     addr = (ip_address, port)
     new_conn = socket.create_connection(addr)
 
-    new_conn.send()
+    new_conn.send(b'hello')
     new_conn.close()
 
 notifier()
